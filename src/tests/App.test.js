@@ -33,5 +33,13 @@ describe('testing clicks', () => {
     expect(redCar.className).toBe('car-left');
     userEvent.click(btnRed);
     expect(redCar.className).toBe('car-right');
+
+    expect(blueCar.className).toBe('car-left');
+    userEvent.click(btnBlue);
+    expect(blueCar.className).toBe('car-right');
+
+    expect(yellowCar.className).toBe('car-left');
+    userEvent.click(btnYellow );
+    expect(yellowCar.className).toBe('car-right');
   }) 
 });
